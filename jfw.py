@@ -8,9 +8,9 @@ import esptool
 class Jfw:
     def __init__(self, porta, baud, firmware_path):
         self._port = porta
-        self._boud = boud
-        self._serial = serial.Serial(self._port, self._baud)
-        self._esp = esptool.ESP32Serial(self._port, baud=self._baud)
+        self._baud = baud
+        self._serial = serial.Serial(_port, _baud)
+        self._esp = esptool.ESP32Serial(_port, baud=_baud)
         self._firmware_path = firmware_path 
        
         @property
@@ -26,8 +26,9 @@ class Jfw:
 '''
 Como deve funcionar:
 
-meu_esp = Jfw('\dev\ttyUSB0', 115200, '\\User\\Desktop\\firmware.bin')
+meu_esp = Jws('\dev\ttyUSB0', 115200, '\\User\\Desktop\\firmware.bin')
 meu_esp.flash
 
 att: não testado
 '''
+ 
