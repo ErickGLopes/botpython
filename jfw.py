@@ -26,7 +26,7 @@ class Jfw:
 '''
 Como deve funcionar:
 
-meu_esp = Jws('\dev\ttyUSB0', 115200, '\\User\\Desktop\\firmware.bin')
+meu_esp = Jfw('\dev\ttyUSB0', 115200, '\\User\\Desktop\\firmware.bin')
 meu_esp.flash
 
 att: não testado
